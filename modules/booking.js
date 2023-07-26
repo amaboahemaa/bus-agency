@@ -95,7 +95,7 @@ routes.forEach((route) => {
                     <i class="fa fa-bus" aria-hidden="true"></i>
                 </div>
                 <div class="destination-container">
-                    <p>${route.origin.time}</p>
+                    <p>${route.destination.time}</p>
                     <p>${route.destination.place}</p>
                     <p>${route.date}</p>
                 </div>
