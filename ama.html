@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Commpatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TheBusAgency</title>
+        <link rel="stylesheet" href="ama-stylesheet.css">
+    </head>
+
+    <body>
+        <section id="header">
+            <div class="logo-container">
+                <a href="#"><img class="logo" src="img/LOGO.png" width="300px" height="100px" alt="TheBusAgency logo"></a>
+            </div>
+
+            <div>
+                <ul id="navbar">
+                    <li><a href="ama.html">Home</a></li>
+                    <li><a href="booking.html">Bookings</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+        </section>
+
+        <section id="hero">
+            <div class="bg-img"></div>
+            <div class="bg-text">
+                <h2>Do you want to travel stress free?</h2>
+                <p id="hero-paragraph">
+                    Struggling with getting a ticket at the bus station?<br>
+                    Well join the TBA family
+                </p>
+                <h4>Travel with us stress free and be care free</h4>
+            </div>
+        </section>
+
+
+        <section id="forms" class="section-m1">
+            <div class="container">
+                <header>TBA</header>
+                <form action="#" id="form-container">
+                    <div class="input-container">
+                        <label>Travelling From:</label>
+                        <select name="" id="origin">
+                            <option value="" disabled selected>From</option>
+                            <option value="Accra(Achimota)">Accra (Achimota), GT. Accra</option>
+                            <option value="Kumasi(Asafo)">Kumasi (Asafo), Ashanti</option>
+                        </select>
+                    </div>
+                    <div class="input-container">
+                        <label>Travelling To:</label>
+                        <select name="" id="destination">
+                            <option value="" disabled selected>To</option>
+                            <option value="Accra(Achimota)">Accra (Achimota), GT. Accra</option>
+                            <option value="Kumasi(Asafo)">Kumasi (Asafo), Ashanti</option>
+                        </select>
+                    </div>
+                    <div class="input-container">
+                        <label for="">Departure</label>
+                        <input type="date" id="form-date">
+                    </div>
+                    <div class="input-container">
+                        <label for="">Select the number of suitcases</label>
+                        <select name="" id="number-of-suitcases">
+                            <option value="" disabled selected>Number of suitcases</option>
+                            <option value="1">0</option>
+                            <option value="2">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                    </div>
+                    <div class="input-container"> 
+                        <label for="">Note:</label>
+                        <textarea name="" id="form-textarea" cols="35" rows="3" placeholder="Max weight for a suitcase is 25kg. A penalty will be paid for excess kg" disabled></textarea>
+                    </div>
+                    <div class="btn-container">
+                        <li id="form-submit-btn">
+                            <a href="booking.html" id="search-btn">
+                                Search
+                            </a>
+                        </li>
+                    </div>
+                </form>
+            </div>
+
+        </section>
+        <footer>
+            <img src="img/LOGO.png" width="300px" height="100px" alt="logo">
+            &copy; Copyright 2023 The Bus Agency
+        </footer>
+        <script src="index.js"></script>
+        <script src="https://kit.fontawesome.com/8df8214a32.js" crossorigin="anonymous"></script>
+    </body>
+</html>

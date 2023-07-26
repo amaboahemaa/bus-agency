@@ -1,0 +1,361 @@
+/* Header */
+#header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    background: rgb(241, 237, 237);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    z-index: 999;
+    position: static;
+    top: 0;
+    left: 0;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+#navbar li {
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+#navbar li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    color: #1a1a1a;
+    transition: 0.3s ease;
+}
+#navbar li a:hover
+#navbar li a:hover:active {
+    color: #008178;
+}
+
+#navbar li a:active::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background-color: #008178;
+    position: absolute;
+    bottom: -4px;
+    left: 2px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Spartan',sans-serif;
+}
+
+h1 {
+    font-size: 50px;
+    line-height: 64px;
+    color: #222;
+}
+
+h2 {
+    font-size: 46px;
+    line-height: 64px;
+    color: #222;
+}
+
+h4 {
+    font-size: 20px;
+    color: #222;
+}
+
+p {
+    font-size: 16px;
+    color: #465b52;
+    margin: 15px 0 20px 0;
+}
+
+/* Sections*/
+.section-p1 {
+    padding: 40px 80px;
+}
+
+.section-m1 {
+    margin: 40px 0;
+}
+
+button.normal {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: #000;
+    background-color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.2s ;
+}
+
+body {
+    width: 100%;
+}
+
+
+
+
+
+/*HOME PAGE*/
+
+
+
+
+/*Navigation BAR*/
+
+
+/* Header */
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background:  rgb(rgb(241, 237, 237), 0, 0);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    z-index: 999;
+    position: static;
+    top: 0;
+    left: 0;
+}
+
+.logo{
+    width:100x;
+    height: 60px;
+    object-fit: contain;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Dancing Script', cursive;}
+
+#navbar li {
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+#navbar li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    color: #1a1a1a;
+    transition: 0.3s ease;
+}
+#navbar li a:hover,
+#navbar li a:active {
+    color: #008178;
+}
+
+#navbar li a:active::after{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background-color: #088178;
+    position: absolute;
+    bottom: -4px;
+    left: 2px;
+}
+
+/* Bookings */
+#buses {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+#booking-container {
+    margin-top: 15px;
+}
+
+.booking-info-container,
+.booking-header {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+}
+
+.booking-info-container {
+    border: 1px solid #cecdcd;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.bus-info-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    padding: 0 1rem;
+}
+
+.booking-header {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.VIP-container,
+.STC-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #cecdcd;
+    cursor: pointer;
+}
+
+.VIP-container:hover,
+.STC-container:hover {
+    border: 1px solid black;
+}
+
+.distance-container {
+    display: flex;
+    align-items: center;
+}
+
+.fa-bus {
+    color: red;
+}
+
+/* Modal */
+#modal,
+#signup-modal {
+    width: 600px;
+    height: 500px;
+    display: none;
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    background-color: #fff;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 10px 10px;
+    z-index: 10;
+}
+
+#overlay {
+    display: none;
+    width: 100%;
+    height: 100vh;
+    background-color: transparent;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    z-index: 3;
+    backdrop-filter: blur(3px);
+}
+
+#modal-close-btn,
+#signup-close-btn {
+    cursor: pointer;
+}
+
+.row-container {
+    display: flex;
+}
+
+.modal-content-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding: 30px 40px;
+}
+
+.price-container {
+    display: flex;
+    align-items: center;
+}
+
+.price-container p {
+    margin: 0;
+}
+
+.price-container img {
+    width: 48px;
+    height: 48px;
+}
+
+.seat-img {
+    cursor: pointer;
+}
+
+.seat-img:hover {
+    background-color: #cecdcd;
+}
+
+.modal-content-container button {
+    color: #fff;
+    background-color: rgb(24, 177, 24);
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+/* Sign Up */
+.sign-up{
+    width: 360px;
+    height: 500px;
+    margin: auto;
+    background-color: white;
+    border-radius: 3px;
+}
+
+#signup-modal h1{
+    text-align: center;
+    padding-top: 15px;
+}
+
+#signup-modal h4{
+    width: 300px;
+    margin-left: 20px;
+}
+
+#signup-modal form{
+    width: 300px;
+    margin-left: 20px;
+    
+}
+
+#signup-modal form label{
+    display: flex;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+#signup-modal form input{
+    width: 100%;
+    padding: 7px;
+    border: none;
+    border: 1px solid gray;
+    border-radius: 6px;
+    outline: none;
+}
+
+#signup-modal button {
+    width: 320px;
+    height: 35px;
+    margin-top: 30px;
+    border: none;
+    background-color: rgb(65, 128, 184);
+    color: white;
+    font-size: 18px;
+
+}
+
+#signup-modal p{
+    text-align: center;
+    padding-top: 30px;
+    font-size: 15px;
+}
