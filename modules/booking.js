@@ -184,6 +184,11 @@ const renderSignUpForm = () => {
                 </label>
                 <button type="submit" id="comfirm-reservation-btn">Confirm</button>
             </form>
+            <div class="warning-text">
+                <p>
+                    Please keep the code and arrive 10 minutes before departure time!
+                </p>
+            </div>
         </div>
     `
     document.getElementById("code-input").value = code;

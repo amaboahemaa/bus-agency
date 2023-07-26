@@ -359,3 +359,11 @@ body {
     padding-top: 30px;
     font-size: 15px;
 }
+
+.sign-up h1 {
+    font-size: 2rem;
+}
+
+.warning-text p {
+    color: red;
+}
